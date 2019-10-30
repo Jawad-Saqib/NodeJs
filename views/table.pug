@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 Enter Player Points
+    form#table(action="/table", method="post")
+        //- input(type="number", name="no", placeholder="Enter Serial Number")
+        //- br
+        input(type="text", name="name", placeholder="Enter Player Name")
+        br
+        input(type="number", name="points", placeholder="Enter Player Points")
+        br
+        input(type="submit", value="Submit")

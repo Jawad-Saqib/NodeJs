@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1 Youtube Video URL
+    form#url(action="/url", method="post")
+        input(type="url", name="url", placeholder="Enter Youtube Video URL")
+        br
+        input(type="submit", value="Submit")

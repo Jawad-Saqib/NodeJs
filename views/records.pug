@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    link(rel="shortcut icon", href="logo.xcf", type="image/x-icon")
+    title= title
+    link(rel='stylesheet', href='/stylesheets/public.css')
+
+  body
+    div#main
+      marquee(behavior="", direction="") Top 10 Qualified Members
+      div
+          h1 Regional Event! Top 10 Qualified Members
+      div
+          table.css-serial
+            tr
+              th Serial No
+              th Player Name
+              th Points
+            each val in data
+              tr
+                td
+                td #{val.name}
+                td #{val.points}

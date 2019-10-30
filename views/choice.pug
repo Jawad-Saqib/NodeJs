@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1 Kindly Choose the action
+    form#choice(action="/choice", method="post")
+        select(name="choice")
+            option(value="points") Points
+            option(value="url") Youtube URL
+        br
+        input(type="submit", value="Submit")
